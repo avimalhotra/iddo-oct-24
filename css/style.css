@@ -27,8 +27,6 @@ iframe{ border: none;}
     font-display: swap;
 }
 
-small{ font-weight: 100;}
-
 :root{
     font-size: 15px;    
     --ff: proxima, sans-serif;
@@ -48,7 +46,7 @@ body{
 .row{
     display: flex;
     flex-flow: row wrap;   
-    margin-inline:-1rem; 
+    margin-inline: -1rem; 
 }
 
 [class^="col-"]{ flex: 1 0 auto; padding-inline: 1rem; }
@@ -73,15 +71,38 @@ body{
 /* CUSTOM */
 header{ background: #000; color: #fff;}
 h1{ font-size: 2rem;}
-h1 a{ color: inherit; line-height: 80px; display: inline-block;}
-nav{}
-nav li{ margin-inline: 5px;}
-nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px; }
-.btn{ font: 16px var(--ff); color: var(--red); width: 90px; height: 35px; background: none; border: 2px solid; border-radius: 10px; }
+h1 a{ color: inherit; line-height: 80px; display: inline-block; }
+nav{ margin-left: -20px; }
+nav li{ margin: 0 5px;}
+nav a{ color: inherit; display: block; padding: 0 1rem; line-height: 80px; }
+.btn{ font: 16px var(--ff); width: 90px; height: 35px; border: 2px solid; color: var(--red); background: none; border-radius: 10px; flex-shrink: 0; }
+
+
+.video{ padding: 15rem 0;}
+.wrap-2{ background: #666; color: #fff;}
+.wrap-2 p{ font-size: 4rem; font-weight: 100; }
+.wrap-2 a{ color: var(--red); }
+.wrap-2 button{ font-size: 10rem; background: none; border: none; color: #fff; margin-right: 40px; }
+
+
+
+.wrap-3{  background: var(--red); color: #fff; padding-block: 50px ;}
+h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom: 2rem;}
+.circle{ width: 100px; border: 2px solid; height: 100px; border-radius: 50%; flex-shrink: 0; display: grid; place-items: center; font-size: 36px; margin-right: 2rem; }
+.text h3{ font-size: 18px; margin-bottom: 10px; }
+.text p{ font: 100 14px/22px var(--ff) }
+.gy-60{ row-gap:4rem}
+
+
+
+
+
+
 
 
 @media screen and (max-width:1220px){
     :root{ font-size: 13px; }
+    h2{ font-size: 62px;}
 }
 
 @media screen and (max-width:980px){
@@ -113,6 +134,8 @@ nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px; }
     .col-m-10{ flex-basis: 83.33%; max-width: 83.33%; }
     .col-m-11{ flex-basis: 91.66%; max-width: 91.66%; }
     .col-m-12{flex-basis: 100%; max-width: 100%; }
+    header .flex{ display: none;}
+    wrap-2.wrap-2 p{ font-size: 3rem;}
 }
 @media screen and (max-width:460px){
     .col-p-1{ flex-basis: 8.33%; max-width: 8.33%; }
@@ -127,4 +150,5 @@ nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px; }
     .col-p-10{ flex-basis: 83.33%; max-width: 83.33%; }
     .col-p-11{ flex-basis: 91.66%; max-width: 91.66%; }
     .col-p-12{flex-basis: 100%; max-width: 100%; }
+    .wrap-2 .flex{ flex-flow: column;}
 }
