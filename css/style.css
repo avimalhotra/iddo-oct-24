@@ -128,14 +128,40 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 
 .wrap-7{ background: #fff; color: #363636; padding:100px 0 140px;}
 .team{ position: relative; margin: 50px 0 40px;}
-.gap{ margin: 50px 0 0 100px;}
 .social{ position: absolute; top: 60px; left: 140px;}
 .social li{ margin-right: 10px;}
 .social a{ display: block; background: var(--red); color: #fff; border-radius: 50%; width: 50px; line-height: 50px; text-align: center; font-size: 24px;}
-.team h3{ color: var(--red); font-size: 18px; margin-bottom: 10px; }
-.team p{ color: #363636; font: 100 14px/22px var(--ff); margin-top: 2rem;}
-.team small{ color: #898989; font-size: 14px; font-weight: 100; }
+.gap{ margin: 50px 0 0 100px;}
+.gap h3{ color: var(--red); font-size: 18px; margin-bottom: 10px; }
+.gap p{ color: #363636; font: 100 14px/22px var(--ff); margin-top: 2rem;}
+.gap small{ color: #898989; font-size: 14px; font-weight: 100; }
 
+
+.wrap-8{ padding: 85px 0 0 0; background: #666; color: #fff; text-align: center; }
+.wrap-8 span.fa{ font-size: 72px;}
+.wrap-8 p{ font: 100 72px var(--ff); }
+.wrap-8 b{ font-size: 18px; margin-bottom: 70px; display: inline-block;}
+
+
+
+.wrap-9{ background: #fff; color: #363636; padding:100px 0 125px;}
+canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
+.accordion{ margin-top: 50px;}
+.accordion li{ margin-bottom: 10px; }
+.accordion p{ font: 100 14px/22px var(--ff); margin: 20px; display: none; }
+.accordion a{ display: block; border: 1px solid #ebebeb; border-radius: 10px; padding: 13px 19px; color: #898989; font: bold 14px var(--ff); }
+.accordion a span.fa{ margin-right: 17px; }
+.accordion a::after{ content: '+'; float: right;}
+.accordion a.active{ color: var(--red); }
+.accordion a.active::after{ content: '-'; }
+.accordion li:first-child p{ display: block;}
+
+
+.wrap-10{ background: var(--red); padding: 23px 0 22px;}
+.wrap-10 input{ width: 370px; height: 35px; background: none; border: none; color: #fff; font: 100 36px var(--ff);}
+.wrap-10 .btn{ background: #fff;}
+.wrap-10 input::placeholder{ color: #fff;}
+.wrap-10 input:focus{ outline: 1px dashed #fff;}
 
 
 @media screen and (max-width:1220px){
@@ -160,6 +186,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     .social ul{ flex-flow: column wrap; }
     .social li{ margin: 0 0 10px 0;}
     .gap{ margin-left: 50px;}
+    .wrap-8 p{ font-size: 60px;}
 }
 
 @media screen and (max-width:767px){
@@ -177,6 +204,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     header .flex{ display: none;}
     .wrap-2 p{ font-size: 3rem;}
     .wrap-5 .btn{ margin-right: 5px;}
+    .wrap-8 p{ font-size: 50px;}
 }
 @media screen and (max-width:460px){
     .col-p-4{ flex-basis: 33.33%; max-width: 33.33%; }
@@ -184,4 +212,5 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     .col-p-12{flex-basis: 100%; max-width: 100%; }
     .wrap-2 .flex{ flex-flow: column;}
     .wrap-5 img{ width: 100%;}
+    .wrap-10 input{ width: 240px; font-size: 24px;}
 }
