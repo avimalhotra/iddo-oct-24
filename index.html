@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
+<body id="home">
     <header>
         <div class="container">
             <div class="row">
@@ -16,17 +16,19 @@
                 </div>
                 <div class="col-10 col-m-6">
                     <button class="btn mob"><span></span><span></span><span></span></button>
-                    <div class="flex justify-content-space-between align-items-center">
-                        <nav>
-                            <ul class="flex">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Portfolio</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <button class="btn signup">Sign up</button>
+                    <div class="collapse">
+                        <div class="flex justify-content-space-between align-items-center">
+                            <nav>
+                                <ul class="flex">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <button class="btn signup">Sign up</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,7 +49,7 @@
             </div>
         </div>
     </div>
-    <section class="wrap-3">
+    <section class="wrap-3" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-t-6 col-p-12">
@@ -108,65 +110,65 @@
             </div>
         </div>
     </div>
-    <section class="wrap-5">
+    <section class="wrap-5" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-t-6 col-p-12">
-                    <h2>OUR SERVICES.</h2>
+                    <h2>OUR TEAM.</h2>
                     <button class="btn active">All</button><button class="btn">Website</button><button class="btn">Branding</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work website">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME web 1</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work website">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME web 2</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work website">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME web 3</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work brand">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME brand 1</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work brand">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME brand 2</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-t-6 col-p-12">
-                    <div class="work">
+                    <div class="work brand">
                         <img src="img/work.webp" alt="work" width="370" height="370" loading="lazy" class="img-resp">
                         <div class="over">
-                            <h3>PROJECT NAME</h3>
+                            <h3>PROJECT NAME brand 3</h3>
                             <p>Designed By Author: Date 10 June</p>
                         </div>
                     </div>
@@ -221,7 +223,7 @@
             </div>
         </div>
     </div>
-    <section class="wrap-7">
+    <section class="wrap-7" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-t-6 col-p-12">
@@ -384,7 +386,7 @@
             </div>
         </div>
     </div>
-    <section class="wrap-12">
+    <section class="wrap-12" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-t-6 col-p-12">
@@ -418,5 +420,63 @@
             <button><span class="fa fa-chevron-up"></span></button>
         </div>
     </footer>     
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+<script>
+$(function(){
+    $("#portfolio .btn").click(function(){
+        $("#portfolio .btn").removeClass("active");
+        $(this).addClass("active");
+
+        $(".work").fadeOut(0);
+
+        const filter = $(this).text().toLowerCase();
+        
+        if(filter == "all"){ 
+            $(".work").fadeIn(500);
+        }
+        else if(filter == "website"){ 
+            $(".work.website").fadeIn(500);
+        }
+        else{ 
+            $(".work.brand").fadeIn(500);
+         }
+    });
+
+    $(".accordion a").click(function(e){
+        e.preventDefault();
+
+        if( $(this).hasClass("active")==false ){
+            $(".accordion a").removeClass("active");
+            $(this).addClass("active");
+            $(".accordion p").slideUp(500);
+            $(this).next("p").slideDown(500);
+        }
+       /*  else{
+            $(".accordion a").removeClass("active");
+            $(".accordion p").slideUp(500);
+        } */
+    });
+
+    $(".wrap-13 button").click(function(){        
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
+
+    $(".mob").click(function(){
+        $(this).toggleClass("active");
+        $(".collapse").slideToggle();
+    });
+
+
+    if(screen.width<768){
+        $("nav a").click(function(){
+            $(".collapse").slideUp();
+            $(".mob").removeClass("active");
+        })        
+    }
+    
+
+
+});
+</script>
 </body>
 </html>
